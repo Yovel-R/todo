@@ -1,0 +1,106 @@
+
+* {
+  font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(90deg, #262e3a, #1d3d70, #3346a4, #6f42cf, #bb12eb);
+    color: azure;
+    min-width: fit-content;
+}
+h1,
+form,
+.todo-container,
+.task-contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10rem;
+    font-size: 3rem;
+}
+input,
+button{
+    border: none;
+    outline: none;
+    border-radius: 1px;
+    font-size: 1.5rem;
+}
+.input-box,
+.add-button{
+    padding: 0.5rem;
+}
+.add-button{
+    cursor: pointer;
+    margin: 1rem;
+}
+.todo-container{
+    
+    list-style: none;
+    color: rgb(240, 255, 243);
+    font-size: 1.6rem;
+    padding: 0rem 0rem;
+    min-height: 5rem;
+
+}
+.todo-item{
+    background-color: rgba(255, 255, 255, 0.208);
+    margin: 0rem 0rem;
+    padding-right: 1rem;
+    padding-left: 2rem;
+    border-radius: 12px;
+    min-height: fit-content;
+    text-align: center;
+    min-width: 15rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 0.5rem;
+}
+.delete-btn{
+    cursor: pointer;    
+    margin: 0rem 1rem;
+    background-color: #c01c1c;
+    border-radius:2rem;
+    padding: 0.2rem 0.65rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.complete-btn{
+    cursor: pointer;
+    background-color: #5ec01c;
+    border-radius:2rem;
+    padding: 0.2rem 0.65rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.fa-check,
+.fa-trash{
+    color: #ffffff;
+    pointer-events: none;
+}
+.comp{
+   
+    
+    text-decoration-color: #000000;
+    text-decoration-thickness: 0.2rem;
+    .todo-item{
+        background-image: url(check-mark.png);
+        background-size: contain;
+        /* background-position-x: 3rem; */
+        background-repeat: no-repeat;
+        background-position: left;
+        background-color: #5ec01c51;
+        
+    }
+    .delete-btn{
+        background-color: #c01c1c00;
+        box-shadow: none;
+    }
+    .complete-btn{
+        background-color:#00000000;
+        box-shadow: none;
+    }
+    .fa-check{
+        color: #ff000000;
+    }
+}
